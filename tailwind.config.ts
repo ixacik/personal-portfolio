@@ -65,7 +65,7 @@ const config = {
       padding: {
         // for consistent spacing
         section: "6rem",
-        "section-large": "15rem",
+        "section-large": "10rem",
         xs: "0.5rem",
         sm: "1rem",
         md: "1.5rem",
