@@ -110,7 +110,7 @@ export default function HomePage() {
             <CardHeader className="h-full flex flex-col justify-center">
               <CardTitle className="pb-xs">And this is me...</CardTitle>
               <CardDescription className="leading-[1.5]">
-                I&apos;m a fast learning, I love a fast paced environment where
+                I&apos;m a fast learner and love a fast paced environment where
                 I can learn new things and solve new problems.
               </CardDescription>
             </CardHeader>
