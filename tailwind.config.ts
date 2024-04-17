@@ -22,6 +22,9 @@ const config = {
       },
     },
     extend: {
+      boxShadow: {
+        glow: "0 -10 10px 3px rgba(255, 255, 255, 1)",
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

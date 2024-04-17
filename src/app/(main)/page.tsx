@@ -1,22 +1,42 @@
 import { Button } from "@/components/ui/button";
-import { ArrowUpRight, Code, Github, Linkedin, Twitter } from "lucide-react";
+import {
+  ArrowUpRight,
+  Code,
+  Contact,
+  Github,
+  Linkedin,
+  Twitter,
+} from "lucide-react";
 import Link from "next/link";
 import TerminalWindow from "./_components/terminal-window";
-import Image from "next/image";
 import { TECH } from "@/lib/constants";
 import {
   Card,
-  CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
 import { Drizzle, Next, PG, TS, Tailwind } from "@/components/icons";
+import { ProjectCard } from "./_components/project-card";
+import ContactForm from "./_components/contact-form";
+import { Badge } from "@/components/ui/badge";
 
 export default function HomePage() {
   return (
     <>
-      <section className="flex flex-col items-center justify-center pt-section background-grid">
+      <section
+        className="flex flex-col items-center justify-center pt-xl background-grid"
+        id="home"
+      >
+        <a href="#contact">
+          <Badge className="mb-md hover:bg-white/10">
+            <div className="relative">
+              <div className="bg-green-500 size-2 rounded-full mr-1 animate-ping absolute inset-0" />
+              <div className="bg-green-500 size-2 rounded-full mr-1" />
+            </div>
+            Work Status: <span className="ml-1 text-green-500">Available</span>
+          </Badge>
+        </a>
         <div className="flex gap-2 items-center mb-lg">
           <Button variant="outline" size="icon" asChild>
             <Link href={"https://www.github.com/ixacik"}>
@@ -95,7 +115,7 @@ export default function HomePage() {
             <CardHeader className="h-full flex flex-col justify-center max-w-[75%]">
               <CardTitle className="pb-xs">
                 Currently, I&apos;m learning:{" "}
-                <span className="bg-clip-text text-transparent bg-gradient-to-r from-lime-100 to-lime-500">
+                <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-lime-500">
                   DrizzleORM
                 </span>
               </CardTitle>
@@ -117,36 +137,61 @@ export default function HomePage() {
           </Card>
         </div>
       </section>
-      <section className="flex flex-col items-center">
+      <section className="flex flex-col items-center pb-section-large">
         <span className="text-[2rem] mb-2">💼</span>
         <h2 className="text-3xl">Selected Projects</h2>
-        <div id="projects" className="w-full mt-xl flex flex-col gap-4">
-          <Card className="w-full relative bg-gradient-to-br from-transparent to-primary/5 p-md flex justify-between items-center">
-            <CardHeader className="w-full h-full">
-              <CardTitle className="mb-sm">Project 1</CardTitle>
-              <CardDescription className="max-w-prose">
-                laboris aliqua reprehenderit enim irure aliquip non irure sint
-                excepteur reprehenderit ipsum voluptate adipisicing nulla aliqua
-                enim velit enim magna officia consectetur elit culpa minim
-                officia aute et sint anim
-              </CardDescription>
-            </CardHeader>
-            <CardContent className="max-w-[16rem] flex flex-col gap-2 w-full h-full justify-center p-6">
-              <Button className="w-full" variant="outline" asChild>
-                <Link href={"/"}>
-                  <ArrowUpRight className="size-4 mr-xs" />
-                  View Deployment
-                </Link>
-              </Button>
-              <Button className="w-full" variant="outline" asChild>
-                <Link href={"/"}>
-                  <Github className="size-4 mr-xs" />
-                  Github Repo
-                </Link>
-              </Button>
-            </CardContent>
-          </Card>
+        <div
+          id="projects"
+          className="w-full mt-xl flex flex-col gap-8 background-grid"
+        >
+          <ProjectCard
+            image={"/test-mockup.jpg"}
+            title={"Fuudplan"}
+            subtitle="- Meal Planner"
+            description={
+              "magna fugiat id irure elit culpa irure enim esse occaecat elit sint minim in enim ea in veniam incididunt occaecat minim laborum tempor deserunt minim id minim anim excepteur aliquip"
+            }
+            deploymentLink={"/"}
+            githubLink={"/"}
+            tech={["Next.js", "TailwindCSS", "TypeScript", "MongoDB"]}
+          />
+          <ProjectCard
+            image={"/test-mockup.jpg"}
+            title={"Zap.ai"}
+            subtitle="- AI Powered Image Manipulation"
+            description={
+              "magna fugiat id irure elit culpa irure enim esse occaecat elit sint minim in enim ea in veniam incididunt occaecat minim laborum tempor deserunt minim id minim anim excepteur aliquip"
+            }
+            deploymentLink={"/"}
+            githubLink={"/"}
+            tech={["Next.js", "TailwindCSS", "TypeScript", "MongoDB"]}
+          />
+          <ProjectCard
+            image={"/test-mockup.jpg"}
+            title={"Magic Search"}
+            subtitle="- Semantic Search Engine"
+            description={
+              "magna fugiat id irure elit culpa irure enim esse occaecat elit sint minim in enim ea in veniam incididunt occaecat minim laborum tempor deserunt minim id minim anim excepteur aliquip"
+            }
+            deploymentLink={"/"}
+            githubLink={"/"}
+            tech={[
+              "Next.js",
+              "TailwindCSS",
+              "TypeScript",
+              "PostgreSQL",
+              "OpenAI",
+            ]}
+          />
         </div>
+      </section>
+      <section
+        className="flex flex-col items-center background-grid"
+        id="contact"
+      >
+        <span className="text-[2rem] mb-2">📮</span>
+        <h2 className="text-3xl mb-md">Get In Touch</h2>
+        <ContactForm />
       </section>
     </>
   );

@@ -13,7 +13,7 @@ import {
 export const NAV_LINKS = [
   {
     name: "Home",
-    href: "/",
+    href: "#home",
   },
   {
     name: "About",
