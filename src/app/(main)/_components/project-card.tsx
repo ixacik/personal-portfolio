@@ -56,7 +56,7 @@ export function ProjectCard({
           objectFit="cover"
         />
       </div>
-      <div className="flex items-center justify-between p-md">
+      <div className="flex max-md:flex-col items-center justify-between p-md max-md:p-0">
         <CardHeader className="w-full h-full">
           <CardTitle className="mb-xs flex gap-2 items-center">
             {title}
@@ -73,7 +73,7 @@ export function ProjectCard({
             {description}
           </CardDescription>
         </CardHeader>
-        <CardContent className="max-w-[16rem] flex flex-col gap-2 w-full h-full justify-center p-6">
+        <CardContent className="max-w-[16rem] max-md:max-w-full flex flex-col gap-2 w-full h-full justify-center p-6">
           <Button className="w-full" variant="outline" asChild>
             <Link href={deploymentLink}>
               <ArrowUpRight className="size-4 mr-xs" />

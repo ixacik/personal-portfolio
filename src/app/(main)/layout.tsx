@@ -9,7 +9,7 @@ export default function MainLayout({
   return (
     <>
       <Nav />
-      <main className="mt-32 pb-section-large relative z-10 shadow-2xl shadow-white/5 rounded-b-lg border-b border-border">
+      <main className="mt-32 pb-section-large relative z-10 shadow-2xl shadow-white/5 rounded-b-lg border-b border-border px-5">
         {children}
       </main>
       <Footer />

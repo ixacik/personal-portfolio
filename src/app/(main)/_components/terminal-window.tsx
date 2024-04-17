@@ -42,7 +42,7 @@ export default function TerminalWindow() {
   }, [phase]);
 
   return (
-    <div className="min-w-[32rem] h-[350px] max-w-[32rem] rounded-[0.5rem] overflow-hidden dark:shadow-white/5 shadow-white/10 shadow-2xl text-white">
+    <div className="w-full h-[350px] max-w-[32rem] rounded-[0.5rem] overflow-hidden dark:shadow-white/5 shadow-white/10 shadow-2xl text-white">
       <div className="bg-gradient-to-r from-gray-100 to-gray-300 flex items-center gap-2 w-full p-2">
         <div className="bg-red-500 size-3 rounded-full" />
         <div className="bg-yellow-500 size-3 rounded-full" />
@@ -57,7 +57,7 @@ export default function TerminalWindow() {
           </div>
           {phase >= 1 && (
             <>
-              <div className="flex flex-wrap gap-6 text-gray-400 p-1">
+              <div className="flex flex-wrap gap-6 text-gray-400 p-1 gap-y-0">
                 <span>README.md</span>
                 <span>skills</span>
                 <span>cat-facts.txt</span>

@@ -163,3 +163,7 @@ body {
   background-size: cover;
   z-index: -1; /* Ensure it is above the grid */
 }
+
+.pb-section-large {
+  @apply pb-[10rem] max-md:pb-[5rem];
+}

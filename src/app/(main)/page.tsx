@@ -25,7 +25,7 @@ export default function HomePage() {
   return (
     <>
       <section
-        className="flex flex-col items-center justify-center pt-xl background-grid"
+        className="flex flex-col items-center justify-center pt-xl max-md:pt-0 background-grid"
         id="home"
       >
         <a href="#contact">
@@ -54,21 +54,24 @@ export default function HomePage() {
             </Link>
           </Button>
         </div>
-        <h1 className="text-5xl mb-md">
+        <h1 className="text-5xl max-md:text-2xl mb-md text-center">
           Hey 👋🏼, my name is{" "}
           <span className="bg-clip-text bg-gradient-to-br from-blue-500 to-purple-500">
             Patrik.
           </span>
         </h1>
-        <p className="text-muted-foreground mb-xl">
+        <p className="text-muted-foreground mb-xl text-center">
           I&apos;m a junior full-stack developer from Bratislava, Slovakia.
         </p>
         <TerminalWindow />
       </section>
       <section className="pt-section pb-section-large">
-        <div className="flex items-center justify-center gap-12 text-white">
+        <div className="flex items-center justify-center gap-12 text-white flex-wrap">
           {TECH.map((tech) => (
-            <tech.icon key={tech.name} className="fill-primary size-[48px]" />
+            <tech.icon
+              key={tech.name}
+              className="fill-primary size-[48px] flex-shrink-0"
+            />
           ))}
         </div>
       </section>
@@ -79,7 +82,7 @@ export default function HomePage() {
         <span className="text-[2rem] mb-2">✨</span>
         <h2 className="text-3xl mb-xl">About Me </h2>
         {/* bento grid */}
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid grid-cols-3 max-md:grid-cols-1 gap-4">
           <Card className="w-full relative bg-gradient-to-br from-transparent to-primary/5 p-md">
             <CardHeader className="h-full flex flex-col justify-center">
               <Code className="size-8 mb-md" />
@@ -91,7 +94,7 @@ export default function HomePage() {
               </CardDescription>
             </CardHeader>
           </Card>
-          <Card className="w-full relative  p-md col-span-2 flex justify-between items-center overflow-hidden bg-gradient-to-r from-transparent to-primary/5">
+          <Card className="w-full relative p-md md:col-span-2 flex justify-between items-center overflow-hidden bg-gradient-to-r from-transparent to-primary/5">
             <CardHeader className="h-full flex flex-col justify-center max-w-[50%]">
               <CardTitle className="pb-xs">My current tech stack</CardTitle>
               <CardDescription className="leading-[1.5]">
@@ -110,16 +113,16 @@ export default function HomePage() {
               <Tailwind className="size-8 fill-current" />
             </div>
           </Card>
-          <Card className="w-full relative  p-md py-xl col-span-2 flex justify-between items-center overflow-hidden bg-gradient-to-b from-transparent to-primary/10">
+          <Card className="w-full relative  p-md py-xl md:col-span-2 flex justify-between items-center overflow-hidden bg-gradient-to-b from-transparent to-primary/10">
             <Drizzle className="absolute size-64 fill-current opacity-25 right-0" />
-            <CardHeader className="h-full flex flex-col justify-center max-w-[75%]">
+            <CardHeader className="h-full flex flex-col justify-center max-w-[75%] max-md:max-w-[100%]">
               <CardTitle className="pb-xs">
                 Currently, I&apos;m learning:{" "}
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-lime-500">
                   DrizzleORM
                 </span>
               </CardTitle>
-              <CardDescription className="leading-[1.5] max-w-[70%]">
+              <CardDescription className="leading-[1.5] max-w-[70%] max-sm:max-w-[100%]">
                 DrizzleORM is a new replacement for Prisma that enables you to
                 write SQL queries in your code that are very close to actual
                 SQL.

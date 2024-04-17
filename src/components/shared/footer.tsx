@@ -5,8 +5,8 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="w-full z-0 background-grid-reversed">
-      <section className="p-xl flex items-center justify-between">
-        <div className="max-w-[35%]">
+      <section className="p-xl flex items-center justify-between max-md:flex-col">
+        <div className="max-w-[35%] max-md:max-w-full">
           <h2 className="text-3xl mb-md">
             Thanks for checking out my portfolio!
           </h2>
@@ -15,9 +15,9 @@ export default function Footer() {
             reach out.
           </p>
         </div>
-        <div className="max-w-[12rem] space-y-4 text-end">
+        <div className="max-w-[12rem] space-y-4 text-end max-md:text-start w-full max-md:pt-xl max-md:max-w-full">
           <span className="">You can learn more about me here</span>
-          <div className="flex gap-2 items-center justify-end">
+          <div className="flex gap-2 items-center justify-end max-md:justify-start">
             <Button variant="outline" size="icon" asChild>
               <Link href={"https://www.github.com/ixacik"}>
                 <Twitter className="size-4" />
