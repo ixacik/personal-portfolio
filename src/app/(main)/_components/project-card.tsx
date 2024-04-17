@@ -58,7 +58,7 @@ export function ProjectCard({
       </div>
       <div className="flex max-md:flex-col items-center justify-between p-md max-md:p-0">
         <CardHeader className="w-full h-full">
-          <CardTitle className="mb-xs flex gap-2 items-center">
+          <CardTitle className="mb-xs flex gap-2 items-center max-md:items-start max-md:flex-col">
             {title}
             <span className="text-[1.25rem] text-muted-foreground font-medium">
               {subtitle}

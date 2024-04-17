@@ -150,7 +150,7 @@ export default function HomePage() {
           <ProjectCard
             image={"/test-mockup.jpg"}
             title={"Fuudplan"}
-            subtitle="- Meal Planner"
+            subtitle="Meal Planner"
             description={
               "magna fugiat id irure elit culpa irure enim esse occaecat elit sint minim in enim ea in veniam incididunt occaecat minim laborum tempor deserunt minim id minim anim excepteur aliquip"
             }
@@ -161,7 +161,7 @@ export default function HomePage() {
           <ProjectCard
             image={"/test-mockup.jpg"}
             title={"Zap.ai"}
-            subtitle="- AI Powered Image Manipulation"
+            subtitle="AI Powered Image Manipulation"
             description={
               "magna fugiat id irure elit culpa irure enim esse occaecat elit sint minim in enim ea in veniam incididunt occaecat minim laborum tempor deserunt minim id minim anim excepteur aliquip"
             }
@@ -172,7 +172,7 @@ export default function HomePage() {
           <ProjectCard
             image={"/test-mockup.jpg"}
             title={"Magic Search"}
-            subtitle="- Semantic Search Engine"
+            subtitle="Semantic Search Engine"
             description={
               "magna fugiat id irure elit culpa irure enim esse occaecat elit sint minim in enim ea in veniam incididunt occaecat minim laborum tempor deserunt minim id minim anim excepteur aliquip"
             }
