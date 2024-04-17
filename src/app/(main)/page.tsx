@@ -83,7 +83,7 @@ export default function HomePage() {
         <h2 className="text-3xl mb-xl max-md:text-2xl">About Me </h2>
         {/* bento grid */}
         <div className="grid grid-cols-3 max-md:grid-cols-1 gap-4">
-          <Card className="w-full relative bg-gradient-to-br from-transparent to-primary/5 p-md">
+          <Card className="w-full relative bg-gradient-to-br from-transparent to-primary/5 p-md max-md:p-0">
             <CardHeader className="h-full flex flex-col justify-center">
               <Code className="size-8 mb-md" />
               <CardTitle className="pb-xs">I love coding!</CardTitle>
@@ -94,7 +94,7 @@ export default function HomePage() {
               </CardDescription>
             </CardHeader>
           </Card>
-          <Card className="w-full relative p-md md:col-span-2 flex justify-between items-center overflow-hidden bg-gradient-to-r from-transparent to-primary/5">
+          <Card className="w-full relative p-md md:col-span-2 flex justify-between items-center overflow-hidden bg-gradient-to-r from-transparent to-primary/5 max-md:p-0">
             <CardHeader className="h-full flex flex-col justify-center max-w-[50%]">
               <CardTitle className="pb-xs">My current tech stack</CardTitle>
               <CardDescription className="leading-[1.5]">
@@ -113,8 +113,8 @@ export default function HomePage() {
               <Tailwind className="size-8 fill-current" />
             </div>
           </Card>
-          <Card className="w-full relative  p-md py-xl md:col-span-2 flex justify-between items-center overflow-hidden bg-gradient-to-b from-transparent to-primary/10">
-            <Drizzle className="absolute size-64 fill-current opacity-25 right-0" />
+          <Card className="w-full relative  p-md py-xl md:col-span-2 flex justify-between items-center overflow-hidden bg-gradient-to-b from-transparent to-primary/10 max-md:p-0">
+            <Drizzle className="absolute size-64 fill-current opacity-25 right-0 max-md:right-[-3rem] max-md:top-[-5rem]" />
             <CardHeader className="h-full flex flex-col justify-center max-w-[75%] max-md:max-w-[100%]">
               <CardTitle className="pb-xs">
                 Currently, I&apos;m learning:{" "}
@@ -129,7 +129,7 @@ export default function HomePage() {
               </CardDescription>
             </CardHeader>
           </Card>
-          <Card className="w-full relative  p-md flex justify-between items-center overflow-hidden bg-gradient-to-b from-transparent to-primary/10">
+          <Card className="w-full relative  p-md flex justify-between items-center overflow-hidden bg-gradient-to-b from-transparent to-primary/10 max-md:p-0">
             <CardHeader className="h-full flex flex-col justify-center">
               <CardTitle className="pb-xs">And this is me...</CardTitle>
               <CardDescription className="leading-[1.5]">

@@ -38,7 +38,7 @@ export default function ContactForm() {
           ) : null}
         </div>
       )}
-      <div className="flex gap-2 mb-md">
+      <div className="flex max-md:flex-col gap-2 mb-md">
         <div className="w-full space-y-2">
           <Label htmlFor="name">Name</Label>
           <Input
@@ -46,7 +46,7 @@ export default function ContactForm() {
             name="name"
             type="text"
             placeholder="John Doe"
-            className="rounded-[0.75rem]"
+            className="rounded-[0.75rem] max-md:text-[1rem]"
           />
         </div>
         <div className="w-full space-y-2">
@@ -56,7 +56,7 @@ export default function ContactForm() {
             name="email"
             type="email"
             placeholder="johndoe@gmail.com"
-            className="rounded-[0.75rem]"
+            className="rounded-[0.75rem] max-md:text-[1rem]"
           />
         </div>
       </div>
@@ -66,7 +66,7 @@ export default function ContactForm() {
           id="message"
           name="message"
           placeholder="Lorem ipsum..."
-          className="rounded-[0.75rem]"
+          className="rounded-[0.75rem] max-md:text-[1rem]"
         />
       </div>
       <Button type="submit" className="w-full" disabled={pending}>
