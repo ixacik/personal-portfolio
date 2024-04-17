@@ -7,7 +7,7 @@ export default function Footer() {
     <footer className="w-full z-0 background-grid-reversed">
       <section className="p-xl flex items-center justify-between max-md:flex-col">
         <div className="max-w-[35%] max-md:max-w-full">
-          <h2 className="text-3xl mb-md">
+          <h2 className="text-3xl leading-[1.2] mb-md">
             Thanks for checking out my portfolio!
           </h2>
           <p className="text-muted-foreground max-w-[80%]">

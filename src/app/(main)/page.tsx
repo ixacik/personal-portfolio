@@ -80,7 +80,7 @@ export default function HomePage() {
         id="about"
       >
         <span className="text-[2rem] mb-2">✨</span>
-        <h2 className="text-3xl mb-xl">About Me </h2>
+        <h2 className="text-3xl mb-xl max-md:text-2xl">About Me </h2>
         {/* bento grid */}
         <div className="grid grid-cols-3 max-md:grid-cols-1 gap-4">
           <Card className="w-full relative bg-gradient-to-br from-transparent to-primary/5 p-md">
@@ -142,7 +142,7 @@ export default function HomePage() {
       </section>
       <section className="flex flex-col items-center pb-section-large">
         <span className="text-[2rem] mb-2">💼</span>
-        <h2 className="text-3xl">Selected Projects</h2>
+        <h2 className="text-3xl max-md:text-2xl">Selected Projects</h2>
         <div
           id="projects"
           className="w-full mt-xl flex flex-col gap-8 background-grid"
@@ -193,7 +193,7 @@ export default function HomePage() {
         id="contact"
       >
         <span className="text-[2rem] mb-2">📮</span>
-        <h2 className="text-3xl mb-md">Get In Touch</h2>
+        <h2 className="text-3xl mb-md max-md:text-2xl">Get In Touch</h2>
         <ContactForm />
       </section>
     </>
