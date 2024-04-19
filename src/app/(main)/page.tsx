@@ -49,7 +49,7 @@ export default function HomePage() {
             </Link>
           </Button>
           <Button variant="outline" size="icon" asChild>
-            <Link href={"https://www.github.com/ixacik"}>
+            <Link href={"https://www.linkedin.com/in/patriklevak/"}>
               <Linkedin className="size-4" />
             </Link>
           </Button>
@@ -148,36 +148,36 @@ export default function HomePage() {
           className="w-full mt-xl flex flex-col gap-8 background-grid"
         >
           <ProjectCard
-            image={"/test-mockup.jpg"}
+            image={"/fuudplan-mockup.jpg"}
             title={"Fuudplan"}
             subtitle="Meal Planner"
             description={
-              "magna fugiat id irure elit culpa irure enim esse occaecat elit sint minim in enim ea in veniam incididunt occaecat minim laborum tempor deserunt minim id minim anim excepteur aliquip"
+              "Meal planner app that helps you plan your meals for the entire week. You can add recipes your own recipes along with ingredients, calories and macronutrients. Using an intuitive UI, you can plan your meals for the week and generate a shopping list. This enables you to go shopping only once a week and make sure you hit your calorie target every single day."
             }
-            deploymentLink={"/"}
-            githubLink={"/"}
+            deploymentLink={"https://fuudplan.vercel.app/"}
+            githubLink={"https://github.com/ixacik/mealplanner"}
             tech={["Next.js", "TailwindCSS", "TypeScript", "MongoDB"]}
           />
           <ProjectCard
-            image={"/test-mockup.jpg"}
-            title={"Zap.ai"}
+            image={"/imaginify-mockup.jpg"}
+            title={"Imaginify"}
             subtitle="AI Powered Image Manipulation"
             description={
-              "magna fugiat id irure elit culpa irure enim esse occaecat elit sint minim in enim ea in veniam incididunt occaecat minim laborum tempor deserunt minim id minim anim excepteur aliquip"
+              "Uses Cloudinary API for image manipulation including background remove, object remove, object recolor and generative fill. The app is also a fully featured SaaS - it has a Stripe payment system to buy credits, each image transformation costs the user 1 credit."
             }
-            deploymentLink={"/"}
-            githubLink={"/"}
+            deploymentLink={"https://zap-ai.vercel.app/"}
+            githubLink={"https://github.com/ixacik/zap.ai"}
             tech={["Next.js", "TailwindCSS", "TypeScript", "MongoDB"]}
           />
           <ProjectCard
-            image={"/test-mockup.jpg"}
+            image={"/magicsearch-mockup.jpg"}
             title={"Magic Search"}
             subtitle="Semantic Search Engine"
             description={
-              "magna fugiat id irure elit culpa irure enim esse occaecat elit sint minim in enim ea in veniam incididunt occaecat minim laborum tempor deserunt minim id minim anim excepteur aliquip"
+              "Semantic search engine that uses PostgreSQL as the primary database, in addition, it also uses an Upstash vector database to store vector embeddings of the items. The items were embedded using ada-2 from OpenAI. If no results are found using text search, it will queue Upstash to find the most semantically relevant item."
             }
-            deploymentLink={"/"}
-            githubLink={"/"}
+            deploymentLink={"https://semantic-search-engine.vercel.app/"}
+            githubLink={"https://github.com/ixacik/semantic-search-engine"}
             tech={[
               "Next.js",
               "TailwindCSS",

@@ -86,12 +86,6 @@ export function ProjectCard({
               Github Repo
             </Link>
           </Button>
-          <Button className="w-full" variant="outline" asChild>
-            <Link href={`/projects/${title}`}>
-              <ListMinusIcon className="size-4 mr-xs" />
-              Read Details
-            </Link>
-          </Button>
         </CardContent>
       </div>
     </Card>

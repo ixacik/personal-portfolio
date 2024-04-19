@@ -29,7 +29,7 @@ export default function Footer() {
               </Link>
             </Button>
             <Button variant="outline" size="icon" asChild>
-              <Link href={"https://www.github.com/ixacik"}>
+              <Link href={"https://www.linkedin.com/in/patriklevak/"}>
                 <Linkedin className="size-4" />
               </Link>
             </Button>
